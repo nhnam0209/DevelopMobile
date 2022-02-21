@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Kind"
+        android:textColor="#338DFF" />
+
+    <RadioGroup
+        android:id="@+id/rgCoffeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte" />
+        <RadioButton
+            android:id="@+id/rbCappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino" />
+        <RadioButton
+            android:id="@+id/rbEspresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Added"
+        android:textColor="#338DFF"/>
+
+    <CheckBox
+        android:id="@+id/cbSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sugar"/>
+
+    <CheckBox
+        android:id="@+id/cbCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cream"/>
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#338DFF"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>
