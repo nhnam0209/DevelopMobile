@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class User {
     private String Name;
-    private String Address;
+    private String Phone;
+    private int Avatar;
 
     public String getName() {
         return Name;
@@ -14,24 +15,36 @@ public class User {
         Name = name;
     }
 
-    public String getAddress() {
-        return Address;
+    public String getPhone() {
+        return Phone;
     }
 
-    public void setAddress(String address) {
-        Address = address;
+    public void setPhone(String phone) {
+        Phone = phone;
     }
+
+    public int getAvatar() {
+        return Avatar;
+    }
+
+    public void setAvatar(int avatar) {
+        Avatar = avatar;
+    }
+
 
     public ArrayList<User> getData(){
+        int [] avatars = {R.drawable.ic_logo,R.drawable.ic_logo,R.drawable.ic_logo};
         String[] names = {"Nam", "Phung", "Huy"};
-        String[] address = {"Tan Binh", "Tan Binh", "Quan 7"};
-        ArrayList <User> user = new ArrayList<>();
+        String[] address = {"09015131322", "09065132131", "090141521902"};
+        ArrayList <User> users = new ArrayList<>();
         for (int i = 0; i < names.length; i++){
             User u = new User();
+            u.setAvatar(avatars[i]);
             u.setName(names[i]);
-            u.setAddress(address[i]);
-            user.add(u);
+            u.setPhone(address[i]);
+            users.add(u);
         }
-        return  user;
+        return users;
     }
+
 }
