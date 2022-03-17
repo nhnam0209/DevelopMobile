@@ -37,7 +37,6 @@ public class PersonAdapter  extends RecyclerView.Adapter<PersonAdapter.ViewHolde
             layout_item = itemView.findViewById(R.id.layout_item);
             ivChat = itemView.findViewById(R.id.ivChat);
 
-
         }
     }
 
